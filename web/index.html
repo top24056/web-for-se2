@@ -1,0 +1,348 @@
+<html>
+    <head>
+        <title>Nay eiei</title>
+        <link rel="stylesheet" href="/bootstrap-3.3.7-dist/css/bootstrap.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <script src="index.js"></script>
+       
+    </head>
+    <body>
+        <div class = "container">
+
+            <div class = "row" style = "border-bottom : 2px solid;">
+                <div class = "col-xs-4">
+                    <p>เขต 81</p>
+                    <p>สาขา 03684 สาขา ประตูน้ำท่า</p> 
+                </div>
+                <div class = "col-xs-4" style = "text-align : center;">
+                    <h2>บมจ. ซีพี ออลล์</h2>
+                    <p>ตารางการทำงาน ช่วงวันที่ 21/08/2560-27/08/2560</p>
+                </div>
+            </div>
+            <h5>หน่วยงาน 7-Eleven</h5>
+
+
+            <div class = "table-responsive">
+                <table class = "table table-hover table-condensed" id = "mytable">
+                    <thead>
+                        <tr>
+                            <!-- <th>#</th> -->
+                            <th>Name-Surname</th>
+                            <th>ตำแหน่ง</th>
+                            <th>Phone Number</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr onclick = "editfunction(this)">
+                            <!-- <td>1</td> -->
+                            <td>อนุชา โบรีวงศ์</td>
+                            <td>ผู้จัดการร้าน</td>
+                            <td>086-5078849</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>หยุด</td>
+                        </tr>
+                        <tr onclick = "editfunction(this)">
+                            <!-- <td>2</td> -->
+                            <td>วันชัย ยศสะคำ</td>
+                            <td>ผู้ช่วยผู้จัดการ</td>
+                            <td>0830500750</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>หยุด</td>
+                            <td>1</td>
+                        </tr>
+                        <tr onclick = "editfunction(this)">
+                            <!-- <td>3</td> -->
+                            <td>พรรษา หิงห้อยทอง</td>
+                            <td>พนักงาน</td>
+                            <td>087-5671572</td>
+                            <td>หยุด</td>
+                            <td>หยุด</td>
+                            <td>หยุด</td>
+                            <td>หยุด</td>
+                            <td>หยุด</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr onclick = "editfunction(this)">
+                            <!-- <td>4</td> -->
+                            <td>วรกมล เจริญสุข</td>
+                            <td>พนักงาน</td>
+                            <td>089-4043131</td>
+                            <td>หยุด</td>
+                            <td>หยุด</td>
+                            <td>หยุด</td>
+                            <td>หยุด</td>
+                            <td>หยุด</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <!-- <tr>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                        </tr> -->
+                        <tr onclick = "editfunction(this)">
+                            <!-- <td>5</td> -->
+                            <td>แก้วตา โควางหรู</td>
+                            <td>ผู้ช่วยผู้จัดการ</td>
+                            <td>095-1272957</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>หยุด</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr onclick = "editfunction(this)">
+                            <!-- <td>6</td> -->
+                            <td>จารุณี พุ่มนาค</td>
+                            <td>ผู้ช่วยผู้จัดการ</td>
+                            <td>064-0684229</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>หยุด</td>
+                            <td>1</td>
+                            <td>1</td>
+                        </tr>
+                        <tr onclick = "editfunction(this)">
+                            <!-- <td>7</td> -->
+                            <td>กัญญารัตน์ ประดูรเจริญ</td>
+                            <td>พนักงาน</td>
+                            <td>086-7975130</td>
+                            <td>หยุด</td>
+                            <td>หยุด</td>
+                            <td>หยุด</td>
+                            <td>หยุด</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        <tr onclick = "editfunction(this)">
+                            <!-- <td>8</td> -->
+                            <td>ธนัฏฐา ดมลวงศ์</td>
+                            <td>พนักงาน</td>
+                            <td>085-9436651</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>หยุด</td>
+                        </tr>
+                        <tr onclick = "editfunction(this)">
+                            <!-- <td>9</td> -->
+                            <td>นิรมล เชี่ยงชาญ</td>
+                            <td>พนักงาน</td>
+                            <td>098-5105199</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>หยุด</td>
+                        </tr>
+                        <tr onclick = "editfunction(this)">
+                            <!-- <td>10</td> -->
+                            <td>มณฑล ธรรมสุข</td>
+                            <td>พนักงาน</td>
+                            <td>087-1327209</td>
+                            <td>3</td>
+                            <td>หยุด</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                            <td>2</td>
+                        </tr>
+                        <!-- <tr>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                        </tr> -->
+                        <tr onclick = "editfunction(this)">
+                            <!-- <td>11</td> -->
+                            <td >วันทนีย์ เจริญสุข</td>
+                            <td >ผู้ช่วยผู้จัดการ</td>
+                            <td >087-6108764</td>
+                            <td >3</td>
+                            <td >3</td>
+                            <td >หยุด</td>
+                            <td >3</td>
+                            <td >3</td>
+                            <td >3</td>
+                            <td >3</td>
+                        </tr>
+                        <tr onclick = "editfunction(this)">
+                            <!-- <td>12</td> -->
+                            <td>จันทร์มณี บุญลือ</td>
+                            <td>พนักงาน</td>
+                            <td>085-7582347</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>3</td>
+                            <td>หยุด</td>
+                            <td>หยุด</td>
+                            <td>หยุด</td>
+                        </tr>
+                        <!-- <tr>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                            <td style = "border-top : 2px solid;"></td>
+                        </tr> -->
+                        <tr onclick = "editfunction(this)">
+                            <!-- <td>13</td> -->
+                            <td>สมรักษ์ หิงห้อยทอง</td>
+                            <td>ผู้จัดการ(เจ้าของร้าน)</td>
+                            <td>089-1747978</td>
+                            <td>หยุด</td>
+                            <td>หยุด</td>
+                            <td >หยุด</td>
+                            <td >หยุด</td>
+                            <td>หยุด</td>
+                            <td >หยุด</td>
+                            <td >หยุด</td>
+                        </tr>
+                        <tr onclick = "editfunction(this)">
+                            <!-- <td>14</td> -->
+                            <td>พงศธร วงศ์เกษม</td>
+                            <td>ผู้จัดการ(เจ้าของร้าน)</td>
+                            <td>081-8616134</td>
+                            <td>หยุด</td>
+                            <td>หยุด</td>
+                            <td>หยุด</td>
+                            <td>หยุด</td>
+                            <td>หยุด</td>
+                            <td>หยุด</td>
+                            <td>หยุด</td>
+                        </tr>
+                    </tbody>
+                </table>
+             </div>
+
+            <div class = "row" style = "margin-bottom : 10px;">
+                <div class = "col-xs-4">
+                    <button class = "btn btn-primary btn-block" onclick = "showinfoinsert()">Insert</button>
+                </div>
+                <div class = "col-xs-4">
+                    <button class = "btn btn-warning btn-block" onclick = "showinfoedit()">Edit</button>
+                </div>
+                <div class = "col-xs-4">
+                    <button class = "btn btn-danger btn-block" onclick = "delrow()">Delete</button>
+                </div>
+            </div>
+
+            
+
+
+
+            <div style = "display : none;" id = "disapp">
+                <div class = "row">
+                    <div class = "col-md-4 col-xs-12">
+                        <label>Name-Surname</label>
+                        <input type="text" class = "form-control" id = "name">
+                    </div>
+                    <div class = "col-md-4 col-xs-12">
+                        <label>ตำแหน่ง</label>
+                        <input type="text" class = "form-control" id = "pos">
+                    </div>
+                    <div class = "col-md-4 col-xs-12">
+                        <label>Phone-Number</label>
+                        <input type="text" class = "form-control" id = "phone">
+                    </div>
+                </div>
+
+                <div class = "row" style = "margin-bottom : 10px;">
+                    <div class = "col-md-1 col-xs-6">
+                        <label>Monday</label>
+                        <input type="text" class = "form-control" id = "mon">
+                    </div>
+                    <div class = "col-md-2 col-xs-6">
+                        <label>Tuesday</label>
+                        <input type="text" class = "form-control" id = "tues">
+                    </div>
+                    <div class = "col-md-2 col-xs-6">
+                        <label>Wednesday</label>
+                        <input type="text" class = "form-control" id = "wed">
+                    </div>
+                    <div class = "col-md-2 col-xs-6">
+                        <label>Thursday</label>
+                        <input type="text" class = "form-control" id = "thurs">
+                    </div>
+                    <div class = "col-md-2 col-xs-6">
+                        <label>Friday</label>
+                        <input type="text" class = "form-control" id = "fri">
+                    </div>
+                    <div class = "col-md-2 col-xs-6">
+                        <label>Saturday</label>
+                        <input type="text" class = "form-control" id = "satur">
+                    </div>
+                    <div class = "col-md-1 col-xs-12">
+                        <label>Sunday</label>
+                        <input type="text" class = "form-control" id = "sun">
+                    </div>
+                </div>
+
+               
+
+            </div>
+            <div style = "display : none;" id = "btn-dis">
+                <button onclick = "addrow()" class = "btn btn-success btn-block">Insert NOW!!</button>
+            </div>
+          
+            <div style = "display : none;" id = "btn-edit">
+                <button onclick = "addedit()" class = "btn btn-success btn-block">Edit NOW!!</button>
+            </div>
+            
+        
+        
+        </div>
+        <!-- <button onclick="my()">Try it</button> -->
+    </body>
+    
+</html>
