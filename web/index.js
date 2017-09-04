@@ -40,6 +40,16 @@ function addedit(){
 
 
 function showinfoedit(){
+    document.getElementById("name").value = "";
+    document.getElementById("pos").value = "";
+    document.getElementById("phone").value = "";
+    document.getElementById("mon").value = "";
+    document.getElementById("tues").value = "";
+    document.getElementById("wed").value = "";
+    document.getElementById("thurs").value = "";
+    document.getElementById("fri").value = "";
+    document.getElementById("satur").value = "";
+    document.getElementById("sun").value = "";
     var x = document.getElementById('disapp');
     var y = document.getElementById('btn-edit');
     if(x.style.display === 'none'){
@@ -51,6 +61,16 @@ function showinfoedit(){
 
 
 function showinfoinsert(){
+    document.getElementById("name").value = "";
+    document.getElementById("pos").value = "";
+    document.getElementById("phone").value = "";
+    document.getElementById("mon").value = "";
+    document.getElementById("tues").value = "";
+    document.getElementById("wed").value = "";
+    document.getElementById("thurs").value = "";
+    document.getElementById("fri").value = "";
+    document.getElementById("satur").value = "";
+    document.getElementById("sun").value = "";
     var x = document.getElementById('disapp');
     var y = document.getElementById('btn-dis');
     if(x.style.display === 'none'){
