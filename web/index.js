@@ -148,7 +148,7 @@ function changenumber(){
         var ka = [0,0,0];
         for(var j = 1 ; j < letr;j++){
             var x = document.getElementById('mytable').rows[j].cells[i].innerHTML;
-            console.log("column = " + i + " row = " + j +"  "+ x);
+            // console.log("column = " + i + " row = " + j +"  "+ x);
             if(x === "1"){
                 ka[0] = ka[0] + 1;
             }
@@ -163,11 +163,13 @@ function changenumber(){
         
         for(var k = 0 ; k < 3 ; k++){
             table2.rows[k+1].cells[i-2].innerHTML = ka[k];
-            console.log("k+1 = " , k+1);
-            console.log("i-2 = " , (i-2));
-            console.log("k = " + k)
+            // console.log("k+1 = " , k+1);
+            // console.log("i-2 = " , (i-2));
+            // console.log("k = " + k)
         }
         
         
     }
 }
+
+
