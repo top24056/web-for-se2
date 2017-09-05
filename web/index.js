@@ -33,7 +33,7 @@ function addedit(){
     table.rows[indextable].cells[7].innerHTML = document.getElementById("fri").value;
     table.rows[indextable].cells[8].innerHTML = document.getElementById("satur").value;
     table.rows[indextable].cells[9].innerHTML = document.getElementById("sun").value;
-    changenumber();
+    // changenumber();
 }
 
 
@@ -126,7 +126,7 @@ function addrow(){
     cell9.innerHTML = sun;
 
 
-    changenumber();
+    // changenumber();
 }
 
 function delrow(){
@@ -139,12 +139,12 @@ function delrow(){
 
 
 
-function changenumber(){
-    var lecolunm = document.getElementById("mytable").rows[0].cells.length;
-    var letr = document.getElementById("mytable2").rows.length;
-    for(var i = 0 ; i < lecolunm ; i++){
-        for(var j = 0 ; j < letr;j++){
-            
-        }
-    }
-}
+// function changenumber(){
+//     var lecolunm = document.getElementById("mytable").rows[0].cells.length;
+//     var letr = document.getElementById("mytable2").rows.length;
+//     for(var i = 0 ; i < lecolunm ; i++){
+//         for(var j = 0 ; j < letr;j++){
+//             // console.log(document.getElementById('mytable').rows[j].cells[i].innerHTML);
+//         }
+//     }
+// }
