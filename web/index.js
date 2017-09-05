@@ -33,6 +33,7 @@ function addedit(){
     table.rows[indextable].cells[7].innerHTML = document.getElementById("fri").value;
     table.rows[indextable].cells[8].innerHTML = document.getElementById("satur").value;
     table.rows[indextable].cells[9].innerHTML = document.getElementById("sun").value;
+    changenumber();
 }
 
 
@@ -123,6 +124,9 @@ function addrow(){
     cell7.innerHTML = fri;
     cell8.innerHTML = satur;
     cell9.innerHTML = sun;
+
+
+    changenumber();
 }
 
 function delrow(){
@@ -130,6 +134,17 @@ function delrow(){
     if(confirm("จาลบจิงๆหยอข้อมูลของ " + document.getElementById('mytable').rows[indextable].cells[0].innerHTML)){
         document.getElementById("mytable").deleteRow(indextable);
     }
-    
-    
+}
+
+
+
+
+function changenumber(){
+    var lecolunm = document.getElementById("mytable").rows[0].cells.length;
+    var letr = document.getElementById("mytable2").rows.length;
+    for(var i = 0 ; i < lecolunm ; i++){
+        for(var j = 0 ; j < letr;j++){
+            
+        }
+    }
 }
