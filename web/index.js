@@ -33,7 +33,7 @@ function addedit(){
     table.rows[indextable].cells[7].innerHTML = document.getElementById("fri").value;
     table.rows[indextable].cells[8].innerHTML = document.getElementById("satur").value;
     table.rows[indextable].cells[9].innerHTML = document.getElementById("sun").value;
-    // changenumber();
+    changenumber();
 }
 
 
@@ -126,7 +126,7 @@ function addrow(){
     cell9.innerHTML = sun;
 
 
-    // changenumber();
+    changenumber();
 }
 
 function delrow(){
@@ -139,12 +139,35 @@ function delrow(){
 
 
 
-// function changenumber(){
-//     var lecolunm = document.getElementById("mytable").rows[0].cells.length;
-//     var letr = document.getElementById("mytable2").rows.length;
-//     for(var i = 0 ; i < lecolunm ; i++){
-//         for(var j = 0 ; j < letr;j++){
-//             // console.log(document.getElementById('mytable').rows[j].cells[i].innerHTML);
-//         }
-//     }
-// }
+function changenumber(){
+    var lecolunm = document.getElementById("mytable").rows[0].cells.length;
+    var letr = document.getElementById("mytable").rows.length;
+    var table2 = document.getElementById("mytable2");
+    var ka = [0,0,0];
+    for(var i = 3 ; i < lecolunm ; i++){
+        var ka = [0,0,0];
+        for(var j = 1 ; j < letr;j++){
+            var x = document.getElementById('mytable').rows[j].cells[i].innerHTML;
+            console.log("column = " + i + " row = " + j +"  "+ x);
+            if(x === "1"){
+                ka[0] = ka[0] + 1;
+            }
+            else if(x === "2"){
+                ka[1] = ka[1] + 1;
+            }
+            else if(x === "3"){
+                ka[2] = ka[2] + 1;
+            }
+        }
+
+        
+        for(var k = 0 ; k < 3 ; k++){
+            table2.rows[k+1].cells[i-2].innerHTML = ka[k];
+            console.log("k+1 = " , k+1);
+            console.log("i-2 = " , (i-2));
+            console.log("k = " + k)
+        }
+        
+        
+    }
+}
