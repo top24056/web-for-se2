@@ -52,9 +52,13 @@ function showinfoedit(){
     document.getElementById("sun").value = "";
     var x = document.getElementById('disapp');
     var y = document.getElementById('btn-edit');
-    if(x.style.display === 'none'){
+    if(x.style.display === 'none' && y.style.display === 'none'){
         x.style.display = 'block';
         y.style.display = 'block';
+    }
+    else{
+        x.style.display = 'none';
+        y.style.display = 'none';
     }
 }
 
@@ -73,9 +77,13 @@ function showinfoinsert(){
     document.getElementById("sun").value = "";
     var x = document.getElementById('disapp');
     var y = document.getElementById('btn-dis');
-    if(x.style.display === 'none'){
+    if(x.style.display === 'none' && y.style.display === 'none'){
         x.style.display = 'block';
         y.style.display = 'block';
+    }
+    else{
+        x.style.display = 'none';
+        y.style.display = 'none';
     }
 }
 
