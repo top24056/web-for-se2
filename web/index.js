@@ -1,4 +1,5 @@
 var indextable;
+
 function editfunction(x){
     var old = [];
     indextable = x.rowIndex;
@@ -98,6 +99,7 @@ function addrow(){
 }
 
 function delrow(){
+    console.log(indextable);
     // alert("You just Delete all in row " + document.getElementById('mytable').rows[indextable].cells[0].innerHTML);
     if(confirm("จาลบจิงๆหยอข้อมูลของ " + document.getElementById('mytable').rows[indextable].cells[0].innerHTML)){
         document.getElementById("mytable").deleteRow(indextable);

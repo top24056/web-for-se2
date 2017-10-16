@@ -6,3 +6,11 @@
     -webkit-filter: blur(4px);
     filter: blur(4px);
 }
+
+.highlight{
+    background-color: red;
+}
+
+tr.selected {
+    background-color: #FFCF8B
+}
